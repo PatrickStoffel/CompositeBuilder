@@ -26,7 +26,7 @@ public class EnsureUniqueIdVisitorTest {{
       visitor.acceptAll(node);
 
       expect(id1.attributes.get("id")).toEqual("1");
-      expect(id1AsWell.attributes.get("id")).toBeNull();
+      expect(id1AsWell.attributes.get("id")).toBeNotNull();
     });
   });
 }}
